@@ -1,0 +1,69 @@
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Font for the whole page */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.parent {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.left {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #fff; /* White background for sidebar */
+    padding: 20px;
+    border-right: 2px solid #ddd; /* Light gray border */
+    overflow: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 10px 0; /* Space above and below horizontal rules */
+    border: 0;
+    border-top: 1px solid #ddd; /* Light gray horizontal line */
+}
+
+a {
+    display: block; /* Make links block elements for spacing */
+    padding: 10px 0;
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Primary color */
+    font-size: 18px;
+}
+
+a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+button {
+    background-color: #dc3545; /* Red background for logout button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Space above button */
+}
+
+button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.right {
+    flex: 1; /* Take up the remaining space */
+    background-color: #e9ecef; /* Light gray background for content area */
+    padding: 20px;
+    overflow: auto;
+}

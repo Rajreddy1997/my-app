@@ -1,0 +1,48 @@
+/* Container for all boxes */
+.parent {
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line */
+    gap: 16px; /* Adds space between items */
+    justify-content: center; /* Centers boxes horizontally */
+    padding: 16px; /* Adds padding around the container */
+}
+
+/* Individual box styling */
+.box {
+    border: 1px solid #ddd; /* Light gray border for each box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures content does not overflow the box */
+    padding: 16px; /* Padding inside the box */
+    background-color: #fff; /* White background for each box */
+    width: 220px; /* Fixed width for boxes */
+    text-align: center; /* Centers text inside the box */
+}
+
+/* Image styling */
+.box img {
+    display: block; /* Ensures image is block-level */
+    margin: 0 auto 12px; /* Centers image horizontally and adds space below */
+    max-width: 100%; /* Makes sure image scales within the box */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Heading styling */
+.box h3 {
+    font-size: 1.2em; /* Slightly larger font size for category */
+    margin: 0 0 8px; /* Removes top margin, adds space below */
+    color: #333; /* Dark gray color for text */
+}
+
+/* Title styling */
+.box p {
+    font-size: 1em; /* Standard font size for text */
+    margin: 0 0 8px; /* Removes top margin, adds space below */
+    color: #555; /* Medium gray color for text */
+}
+
+/* Price styling */
+.box .price {
+    font-weight: bold; /* Makes the price stand out */
+    color: #e60012; /* Bright red color for price */
+}

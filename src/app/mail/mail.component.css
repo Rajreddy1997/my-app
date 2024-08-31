@@ -1,0 +1,28 @@
+/* General styles for the parent container */
+.parent {
+    display: flex; /* Allows for flexible layouts */
+    flex-direction: column; /* Arranges children vertically */
+    padding: 20px; /* Adds padding inside the parent */
+    background-color: #f9f9f9; /* Sets a light background color */
+    border: 1px solid #ddd; /* Adds a light border */
+    border-radius: 8px; /* Rounds the corners */
+    max-width: 600px; /* Limits the width of the parent container */
+    margin: auto; /* Centers the parent container horizontally */
+}
+
+/* Styles for each child element */
+.child {
+    padding: 10px; /* Adds padding inside each child element */
+    margin-bottom: 8px; /* Adds space between each child */
+    border: 1px solid #ccc; /* Adds a border around each child */
+    border-radius: 4px; /* Rounds the corners of each child */
+    background-color: #fff; /* Sets a white background color */
+    font-family: Arial, sans-serif; /* Sets the font */
+    font-size: 16px; /* Sets the font size */
+}
+
+/* Additional styling for completed mails */
+.child[ngStyle*="color: grey"] {
+    text-decoration: line-through; /* Adds a strikethrough for completed items */
+    color: grey; /* Sets the text color to grey */
+}

@@ -1,0 +1,48 @@
+/* Styles for the form container */
+.parent {
+    max-width: 600px; /* Set a max width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding around the form */
+    border: 1px solid #ddd; /* Add a border around the form */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Styles for the form elements */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Styles for form labels */
+label {
+    font-size: 16px; /* Increase font size for readability */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make labels bold */
+}
+
+/* Styles for form inputs */
+input[type="text"] {
+    padding: 8px; /* Add padding inside the input fields */
+    font-size: 16px; /* Increase font size for readability */
+    border: 1px solid #ccc; /* Border color and style */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between inputs */
+    width: 100%; /* Make input fields span the width of the form */
+}
+
+/* Styles for the submit button */
+button {
+    padding: 10px 15px; /* Add padding inside the button */
+    font-size: 16px; /* Increase font size */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove default button border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}

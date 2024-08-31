@@ -1,0 +1,45 @@
+/* Basic reset for the table */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders are combined */
+    margin: 20px 0; /* Add margin above and below the table */
+    font-family: Arial, sans-serif; /* Font for the table */
+}
+
+/* Style the table header */
+thead th {
+    background-color: #f4f4f4; /* Light gray background for header */
+    color: #333; /* Dark text color */
+    padding: 10px; /* Padding inside header cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 2px solid #ddd; /* Bottom border for header cells */
+}
+
+/* Style the table cells */
+tbody td {
+    padding: 10px; /* Padding inside table cells */
+    border-bottom: 1px solid #ddd; /* Bottom border for table rows */
+}
+
+/* Style for images */
+tbody img {
+    border-radius: 4px; /* Rounded corners for images */
+    object-fit: cover; /* Ensure image covers the given dimensions */
+}
+
+/* Style alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Slightly darker gray on hover */
+}
+
+/* Add spacing around table */
+table {
+    border: 1px solid #ddd; /* Border around the whole table */
+    border-radius: 4px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensure rounded corners work */
+}

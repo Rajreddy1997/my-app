@@ -1,0 +1,8 @@
+<div class="parent">
+    <div class="box" *ngFor="let data of filpkartpages">
+        <img src="{{data.image}}" alt="" height="150px" width="200px">
+        <h3>{{data.category}}</h3>
+        {{data.title}}
+        <p>{{'Rs.'+data.price}}</p>
+    </div>
+</div>

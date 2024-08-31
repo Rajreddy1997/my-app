@@ -1,0 +1,68 @@
+<div class="parent">
+    <div class="search">
+    <input type="text" [ngModel]="term" (keyup)="filter()">
+    <label for="">column:</label>
+        <select name="" id=""  [(ngModel)]="column">
+            <option>Name</option>
+            <option>city</option>
+            <option>email</option>
+        </select> 
+        <label for="">order</label>
+        <select name="" id="" [(ngModel)]="order">
+            <option value="asc">ascending</option>
+            <option value="desc">descending</option>
+        </select>
+        <button (click)="sort()">sort</button>
+        <br><br>
+        <label for="">count:</label>
+        <input type="number" [(ngModel)]="count">
+        <label for="">page</label>
+        <input type="number" [(ngModel)]="page">
+        <button>limit</button>
+</div>
+<br>
+        <div class="box" *ngFor="let data of studentidcards"> 
+        <div class="top">
+             <div class="left">
+                <img src="{{data.school_logo}}" alt="" height="50px" width="50px">
+             </div>
+             <div class="right">
+                <h4>{{data.school_name}}</h4>
+                <h5>{{data.school_city}}</h5>
+                <h5>{{data.school_pin}}</h5>
+             </div>
+        </div>
+        <div class="bottom">
+            <div class="details">
+        <label for="">Name : {{data.name}}</label>
+        
+        <label for="">Phone : {{data.phone}}</label>
+    
+        <label for="">City : {{data.city}}</label>
+    
+        <label for="">Dob : {{data.dob}}</label>
+    
+        <label for="">Emil : {{data.email}}</label>
+        
+            </div>
+            <div class="image">
+                <img src="{{data.profile_picture}}" alt="" height="90px" width="90px">
+            </div>
+
+        </div>
+        <div class="down">
+            <div class="view">
+                <button>view</button>
+            </div>
+            <div class="edit">
+                <button>edit</button>
+            </div>
+            <div class="delete">
+                <button>delete</button>
+            </div>
+        </div>
+
+     </div>
+</div>
+
+ 

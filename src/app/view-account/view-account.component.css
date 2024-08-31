@@ -1,0 +1,51 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the overall body */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, readable font */
+    background-color: #f4f4f4; /* Light grey background for contrast */
+    color: #333; /* Dark grey text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Styles for the container div */
+div {
+    max-width: 600px; /* Limits the width of the content */
+    margin: 20px; /* Space around the container */
+    padding: 20px;
+    background-color: #fff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styles for the h2 element */
+h2 {
+    font-size: 24px; /* Larger font size for the main header */
+    color: #007bff; /* Blue color for the account name */
+    margin-bottom: 15px; /* Space below the h2 */
+    border-bottom: 2px solid #007bff; /* Blue underline for emphasis */
+    padding-bottom: 10px; /* Padding below the text */
+}
+
+/* Styles for the h3 elements */
+h3 {
+    font-size: 18px; /* Smaller font size for sub-headers */
+    color: #555; /* Slightly lighter grey for sub-headers */
+    margin-bottom: 10px; /* Space below each h3 */
+}
+
+/* Optional: additional styling for labels and values */
+h3::before {
+    content: attr(data-label) ": "; /* Adds a label before the content */
+    font-weight: bold; /* Makes the label bold */
+    color: #333; /* Dark color for the label text */
+}
