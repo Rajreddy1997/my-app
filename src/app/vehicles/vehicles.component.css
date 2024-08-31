@@ -5,6 +5,11 @@ table {
     margin: 20px 0; /* Add margin above and below the table */
     font-family: Arial, sans-serif; /* Font for the table */
 }
+h1{
+    color: red;
+    text-align: center;
+    text-transform: capitalize;
+}
 
 /* Style the table header */
 thead th {
