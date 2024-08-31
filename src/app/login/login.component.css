@@ -47,3 +47,9 @@ button:focus {
     outline: none; /* Remove default focus outline */
     box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.5); /* Add custom focus outline */
 }
+
+
+h1{
+    text-align: center;
+    background-color: orange;
+}
