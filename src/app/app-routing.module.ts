@@ -16,6 +16,13 @@ import { StudentIdCardComponent } from './student-id-card/student-id-card.compon
 import { AuthenticationGuard } from './authentication.guard';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewAccountComponent } from './view-account/view-account.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
+import { ParentComponent } from './parent/parent.component';
+import { CalcultorComponent } from './calcultor/calcultor.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { TodoComponent } from './todo/todo.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -34,8 +41,15 @@ const routes: Routes = [
     {path:'edit-vehicle/:id',component:CreateVehicleComponent},
     {path:'view-account/:id',component:ViewAccountComponent}, 
     {path:'edit-account/:id',component:CreateAccountComponent},
-
-   {path:'',component:WelcomeComponent}
+    {path:'create-user',component:CreateUserComponent},
+    {path:'studentdetails',component:StudentdetailsComponent},
+    {path:'parent',component:ParentComponent},
+    {path:'calcultor',component:CalcultorComponent},
+    {path:'sibling',component:SiblingComponent},
+    {path:'amazon',component:AmazonComponent},
+    {path:'todo',component:TodoComponent},
+   {path:'',component:WelcomeComponent},
+   
   ]},
   {path:'', component:LoginComponent},
   {path:'**', component:PagenotfoundComponent}

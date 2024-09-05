@@ -22,6 +22,25 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { StudentIdCardComponent } from './student-id-card/student-id-card.component';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewAccountComponent } from './view-account/view-account.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+import { CalcultorComponent } from './calcultor/calcultor.component';
+import { TextareaComponent } from './textarea/textarea.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { AmazonComponent } from './amazon/amazon.component';
+import { Amazon1Component } from './amazon1/amazon1.component';
+import { Amazon2Component } from './amazon2/amazon2.component';
+import { Amazon3Component } from './amazon3/amazon3.component';
+import { Amazon4Component } from './amazon4/amazon4.component';
+import { TodoComponent } from './todo/todo.component';
+import { Todo1Component } from './todo1/todo1.component';
+import { Todo2Component } from './todo2/todo2.component';
+import { Todo3Component } from './todo3/todo3.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +59,26 @@ import { ViewAccountComponent } from './view-account/view-account.component';
     CreateAccountComponent,
     StudentIdCardComponent,
     ViewVehicleComponent,
-    ViewAccountComponent
+    ViewAccountComponent,
+    CreateUserComponent,
+    StudentdetailsComponent,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent,
+    CalcultorComponent,
+    TextareaComponent,
+    SiblingComponent,
+    Sibling1Component,
+    Sibling2Component,
+    AmazonComponent,
+    Amazon1Component,
+    Amazon2Component,
+    Amazon3Component,
+    Amazon4Component,
+    TodoComponent,
+    Todo1Component,
+    Todo2Component,
+    Todo3Component
   ],
   imports: [
     BrowserModule,

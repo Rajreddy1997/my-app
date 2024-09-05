@@ -1,7 +1,6 @@
 
 <h1>login</h1>
 
-
 <div class="parent">
     <div class="child">
     <form [formGroup]="loginForm">
@@ -10,6 +9,12 @@
         <br><br>
         <label for="">password:</label>
         <input type="text" formControlName="password">
+        <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+            <p class="error" *ngIf="loginForm.get('password')?.errors?.['required']"> password  is required</p>
+            <p class="error" *ngIf="loginForm.get('password')?.errors?.['required']"> password should 1char,1num,1spe,</p>
+            <br>
+            <br>
+            </div>
         <br><br>
         <button (click)="login()">login</button>
         <br><br>

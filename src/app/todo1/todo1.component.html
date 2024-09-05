@@ -1,0 +1,15 @@
+<div class="parent">
+
+    <h4>todo</h4>
+    <label for="">Task:</label>
+    <textarea name="" id="" rows="7" cols="30" [(ngModel)]="text"></textarea>
+    <br>
+
+    <label for="">Time:</label>
+    <input type="datetime-local" name="" id="" [(ngModel)]="time">
+    <br>
+    <br>
+
+    <button (click)="create()">create</button>
+    <button (click)="reset()">reset</button>
+</div>
