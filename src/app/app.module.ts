@@ -79,7 +79,7 @@ import { AboutUsModule } from './about-us/about-us.module';
     TodoComponent,
     Todo1Component,
     Todo2Component,
-    Todo3Component
+    Todo3Component,
   ],
   imports: [
     BrowserModule,
